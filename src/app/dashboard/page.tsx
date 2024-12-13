@@ -8,8 +8,6 @@ import { FertilityCareView } from "../(components)/fertility-care-view";
 import { ProfileView } from "../(components)/profile-view";
 import { SymptomChecker } from "../(components)/symptom-checker";
 import { Logo } from "../(components)/logo";
-import { SettingsIcon, EditIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { BottomNav } from "../(components)/bottom-nav";
 
 export default function Dashboard() {
@@ -56,27 +54,6 @@ export default function Dashboard() {
           {currentTab === "fertility" && "Fertility Care"}
           {currentTab === "profile" && "Profile"}
           {currentTab === "symptom" && "Symptom Checker"}
-        </div>
-        <div className="flex items-center gap-2">
-          {currentTab === "profile" && (
-            <>
-              <Button
-                variant="outline"
-                className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
-                onClick={() => setActiveModal("settings")}
-              >
-                <SettingsIcon className="h-4 w-4 mr-2" />
-                Settings
-              </Button>
-              <Button
-                variant="ghost"
-                onClick={isEditMode ? handleSave : handleEdit}
-                className="text-amber-500"
-              >
-                {isEditMode ? "Save" : <EditIcon className="h-4 w-4" />}
-              </Button>
-            </>
-          )}
         </div>
       </div>
 
