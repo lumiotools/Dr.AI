@@ -139,11 +139,10 @@ export function GlobalCareView() {
           Global Care Navigator
         </h1>
         <Button
-          variant="outline"
           onClick={() =>
             setViewMode((prev) => (prev === "list" ? "map" : "list"))
           }
-          className="border-amber-500 text-amber-500"
+          className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
         >
           {viewMode === "list" ? "View Map" : "View List"}
         </Button>
@@ -169,7 +168,7 @@ export function GlobalCareView() {
           <SelectTrigger
             className="w-[200px] bg-emerald-900/50 border-emerald-700"
           >
-            <SelectValue placeholder="Specialty" />
+            <SelectValue placeholder="Specialty" className="text-white"/>
           </SelectTrigger>
           <SelectContent>
             {specialties.map((specialty, index) => (
@@ -291,7 +290,7 @@ export function GlobalCareView() {
                     id={`pdl96s_${index}`}
                   />
                   <div
-                    className="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 whitespace-nowrap bg-emerald-800 px-2 py-1 rounded text-sm"
+                    className="text-white absolute top-full left-1/2 transform -translate-x-1/2 mt-1 whitespace-nowrap bg-emerald-800 px-2 py-1 rounded text-sm"
                     id={`otksbx_${index}`}
                   >
                     {hospital.name}
@@ -337,7 +336,7 @@ export function GlobalCareView() {
               <div>
                 <Button
                   variant="outline"
-                  className="w-full border-amber-500 text-amber-500"
+                  className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
                   onClick={() =>
                     window.open(
                       `https://${selectedHospital?.contact.website}`,

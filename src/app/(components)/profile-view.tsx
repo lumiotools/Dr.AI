@@ -90,7 +90,7 @@ export function ProfileView({
         </h1>
         <Button
           variant="outline"
-          className="border-amber-500 text-amber-500"
+          className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
           onClick={() => onModalChange("settings")}
         >
           <SettingsIcon className="h-4 w-4 mr-2" />
@@ -136,7 +136,7 @@ export function ProfileView({
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="space-y-2">
+          <div className="space-y-2 text-white">
             <h3 className="font-semibold text-emerald-300">
               Medical Information
             </h3>
@@ -150,7 +150,7 @@ export function ProfileView({
               Current Medications: {userData.medications}
             </p>
           </div>
-          <div className="space-y-2">
+          <div className="space-y-2 text-white">
             <h3 className="font-semibold text-emerald-300">
               Physical Details
             </h3>
@@ -172,7 +172,7 @@ export function ProfileView({
           </h3>
           <Button
             variant="outline"
-            className="border-amber-500 text-amber-500"
+            className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
             onClick={onUpload}
           >
             <UploadIcon className="h-4 w-4 mr-2" />
@@ -209,7 +209,7 @@ export function ProfileView({
               </div>
               <Button
                 variant="ghost"
-                className="text-emerald-300"
+                className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
                 id={`jh6nmy_${index}`}
               >
                 View

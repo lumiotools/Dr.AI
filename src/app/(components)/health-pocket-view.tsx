@@ -198,6 +198,7 @@ export function HealthPocketView() {
                       backgroundColor: "hsl(158 64% 10%)",
                       border: "1px solid hsl(158 64% 20%)",
                       borderRadius: "8px",
+                      color:"white"
                     }}
                   />
 
@@ -262,6 +263,7 @@ export function HealthPocketView() {
                       backgroundColor: "hsl(158 64% 10%)",
                       border: "1px solid hsl(158 64% 20%)",
                       borderRadius: "8px",
+                      color:"white"
                     }}
                   />
 

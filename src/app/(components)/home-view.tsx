@@ -88,7 +88,7 @@ export function HomeView({ onTabChange }: HomeViewProps) {
           <Button
             onClick={() => onTabChange("health")}
             variant="outline"
-            className="border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-emerald-950"
+            className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
           >
             View Details
             <ChevronRightIcon className="ml-2 h-4 w-4" />
@@ -113,7 +113,7 @@ export function HomeView({ onTabChange }: HomeViewProps) {
           <Button
             onClick={() => onTabChange("symptom")}
             variant="outline"
-            className="border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-emerald-950"
+            className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
           >
             Check Symptoms
             <ChevronRightIcon className="ml-2 h-4 w-4" />
@@ -138,7 +138,7 @@ export function HomeView({ onTabChange }: HomeViewProps) {
           <Button
             onClick={() => onTabChange("global")}
             variant="outline"
-            className="border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-emerald-950"
+            className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
           >
             Explore
             <ChevronRightIcon className="ml-2 h-4 w-4" />
@@ -163,7 +163,7 @@ export function HomeView({ onTabChange }: HomeViewProps) {
           <Button
             onClick={() => onTabChange("fertility")}
             variant="outline"
-            className="border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-emerald-950"
+            className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
           >
             Learn More
             <ChevronRightIcon className="ml-2 h-4 w-4" />
@@ -188,7 +188,7 @@ export function HomeView({ onTabChange }: HomeViewProps) {
           <Button
             onClick={refreshQuote}
             variant="outline"
-            className="border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-emerald-950"
+            className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
           >
             <RefreshCwIcon className="h-4 w-4" />
           </Button>

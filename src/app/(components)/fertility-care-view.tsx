@@ -127,11 +127,7 @@ export function FertilityCareView() {
             {educationalTips.map((_, index) => (
               <button
                 key={index}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  currentSlide === index
-                    ? "bg-amber-500"
-                    : "bg-emerald-700 hover:bg-emerald-600"
-                }`}
+                className={`w-2 h-2 rounded-full transition-colors `}
                 onClick={() => setCurrentSlide(index)}
                 id={`8v2u1f_${index}`}
               />
@@ -146,7 +142,7 @@ export function FertilityCareView() {
           <Button
             key={index}
             variant="outline"
-            className="border-emerald-700 hover:bg-emerald-800/50 text-emerald-300 h-auto py-4"
+            className="border-emerald-700 h-auto py-4 bg-emerald-900/50 text-white hover:bg-emerald-900/50 hover:text-white"
             onClick={() => window.open(resource.url, "_blank")}
             id={`knwao0_${index}`}
           >

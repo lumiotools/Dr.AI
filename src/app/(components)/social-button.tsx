@@ -14,7 +14,7 @@ export function SocialButton({ icon, label, onClick }: SocialButtonProps) {
     <Button
       variant="outline"
       onClick={onClick}
-      className="w-full border-emerald-700 text-emerald-100 hover:bg-emerald-800/50"
+      className="w-full border-emerald-700 text-emerald-100 bg-emerald-900/50 hover:bg-emerald-900/50 hover:text-emerald-100"
     >
       {icon}
       <span className="ml-2">

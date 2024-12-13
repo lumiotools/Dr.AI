@@ -62,7 +62,7 @@ export default function Dashboard() {
             <>
               <Button
                 variant="outline"
-                className="border-amber-500 text-amber-500"
+                className="bg-emerald-900/50 border-amber-500 text-amber-500 hover:bg-emerald-900/50 hover:text-amber-500"
                 onClick={() => setActiveModal("settings")}
               >
                 <SettingsIcon className="h-4 w-4 mr-2" />
